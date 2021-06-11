@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import './style.css'
 
 const Container = styled.div`
   font-family: "Poppins", sans-serif;
@@ -41,6 +40,44 @@ const WarnIcon = styled.div`
   background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
 `
 
+const IconSpan = styled.div`
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  border-radius: inherit;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+`
+const Icon = styled.i`
+  font-size: 50px;
+  background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+`
+const H2 = styled.h2`
+  margin-top: 35px;
+  font-size: 32px;
+`
+const Description = styled.p`
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+`
+const Button = styled.button`
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  outline:none;
+  color:#fff;
+  border-radius: 50px;
+  cursor:pointer;
+  background: linear-gradient(135deg, #9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+`
+
+
 let adClasses = ['ad', "ads", "adsbox", "ad-placement", "doubleclick", "ad-placeholder", "ad-badge"]
 
 const DetectAdBlock:React.FC = () => {
@@ -65,14 +102,14 @@ const DetectAdBlock:React.FC = () => {
         <Wrapper ref={wrapperRef} show={show} >
           <Content>
             <WarnIcon>
-              <span><i className="fas fa-exclamation"></i></span>
+              <IconSpan><Icon className="fas fa-exclamation" /></IconSpan>
             </WarnIcon>
-            <h2>AdBlock Detected!</h2>
-            <p>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</p>
-            <button onClick={(e) => {
+            <H2>AdBlock Detected!</H2>
+            <Description>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</Description>
+            <Button onClick={(e) => {
               e.preventDefault()
               setShow(false)
-            }}>Okay, I'll whitelist</button>
+            }}>Okay, I'll whitelist</Button>
           </Content>
         </Wrapper>
       </Container>
