@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   min-height: 100vh;
   padding:40px;
   background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  font-family: 'Poppins', sans-serif;
 `
 const Container = styled.div`
   background: #fff;
