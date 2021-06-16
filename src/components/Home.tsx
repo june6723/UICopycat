@@ -10,7 +10,7 @@ const Wrapper = styled.div``
 const Home:React.FC = () => {
   return (
     <Wrapper>
-      {/* <BedimPricingCard /> */}
+      <BedimPricingCard />
       <ResponsiveContackUsForm />
       <DetectAdBlock />
       <PricingCard />

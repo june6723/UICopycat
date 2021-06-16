@@ -6,6 +6,10 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   background-color: #FCFBFC;
+
+  /* @media screen and (max-width: 568px) {
+    display: none;
+  } */
 `
 const Nav = styled.nav`
   position: absolute;

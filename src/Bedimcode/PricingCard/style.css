@@ -1,7 +1,7 @@
 .bedim-pricingCard {
   /*========== Colors ==========*/
   /* Change favorite color - Blue 210 - Purple 250 - Green 142 - Pink 340*/
-  --hue-color: 210;
+  --hue-color: 250;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 96%, 54%);
