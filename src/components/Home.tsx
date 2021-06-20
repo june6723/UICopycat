@@ -13,9 +13,9 @@ const Home:React.FC = () => {
     <Wrapper>
       <ContactForm />
       <BedimPricingCard />
-      {/* <ResponsiveContackUsForm />
+      <ResponsiveContackUsForm />
       <DetectAdBlock />
-      <PricingCard />  */}
+      <PricingCard /> 
     </Wrapper>
   )
 }
